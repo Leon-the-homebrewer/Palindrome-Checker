@@ -13,6 +13,7 @@ using System.Text;
 ///   Date:         17 April 2024
 ///-----------------------------------------------------------------
 Start:
+
 Console.Clear();
 
 Console.Write("Enter Text: ");                   // Prompts User Input
