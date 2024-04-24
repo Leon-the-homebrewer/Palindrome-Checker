@@ -1,8 +1,4 @@
-﻿// Type your username and press enter
-
-
-
-using System.Collections;
+﻿using System.Collections;
 //using System.Collections.Generic;
 using System.Linq;
 using System.Reflection.PortableExecutable;
@@ -28,19 +24,13 @@ string LowerText = Text.ToLower();               // Makes New Var "LowerText" An
 
 Console.WriteLine("Lowercase: " + LowerText);    // (Debug) Outputs Text Var In Lowercase
 
-Char[] Chars = { ' ', '*', '.', '!', '@', '#', '$', '%', '^', '&', '(', ')', '~', '`', '<', '>', ',', '/', ';', '\'', '\\', '\"', '?', ':', '_', '-', '+', '=' };
-
-Char[] whitespace = { ' ' };
-
 Char[] LowerTextARR = LowerText.ToCharArray();   // Convert To Array
 
 List<Char> LowerTextList = LowerTextARR.ToList();// Convert To List
 
-List<Char> CharsList = Chars.ToList();           // Convert Chars To List
-
-bool CheckListbool(char remove)                  // Check If Char Is In List
+bool CheckListbool(char check)                  // Check If Char Is In List
 {
-    return Chars.Any(c => remove == c);
+    return !char.IsLetter(check);
 }
 string FinalIT = "";
 
